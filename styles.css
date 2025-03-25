@@ -9,7 +9,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    background: url('Images/rec.jpg') no-repeat center center fixed;
+    background: url('rec.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -175,4 +175,26 @@ iframe {
     height: 500px;
     border: 0;
     border-radius: 8px;
+}
+
+ol {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
 }

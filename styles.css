@@ -1,23 +1,22 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    background: url('Images/rec.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 header {
-    background: url('Images/ap.jpeg') no-repeat center center;
     background-size: cover;
     color: #fff;
-    padding: 10px 0; /* Adjust padding to reduce height */
+    padding: 10px 0;
     text-align: center;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -27,7 +26,6 @@ header {
     position: relative;
 }
 
-/* Optional: Add an overlay for better text contrast */
 header::before {
     content: "";
     position: absolute;
@@ -35,12 +33,12 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 12px;
 }
 header h1, header nav {
     position: relative;
-    z-index: 1; /* Ensure text stays above the overlay */
+    z-index: 1;
 }
 
 header h1 {
@@ -48,7 +46,6 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/* Navigation Styling */
 nav ul {
     list-style: none;
     text-align: center;
@@ -66,10 +63,9 @@ nav ul li a {
     font-size: 1.1em;
     position: relative;
     padding: 5px 0;
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transition */
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Sliding effect on hover for navigation links */
 nav ul li a::before {
     content: "";
     position: absolute;
@@ -77,22 +73,21 @@ nav ul li a::before {
     bottom: 0;
     width: 100%;
     height: 2px;
-    background-color: #4CAF50; /* The sliding bar color */
-    transform: scaleX(0); /* Initially hidden */
+    background-color: #4CAF50;
+    transform: scaleX(0);
     transform-origin: bottom right;
-    transition: transform 0.3s ease; /* Slide-in effect */
+    transition: transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #4CAF50; /* Change text color on hover */
+    color: #4CAF50;
 }
 
 nav ul li a:hover::before {
-    transform: scaleX(1); /* Slide the underline in */
-    transform-origin: bottom left; /* Start from left when hovered */
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
-/* Main Content Styling */
 main {
     width: 80%;
     max-width: 1000px;
@@ -108,17 +103,15 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Styling for lesson links in main content */
 main section h2 a {
-    color: #0077cc; /* Base color for the lesson links */
+    color: #0077cc;
     text-decoration: none;
     font-weight: bold;
     position: relative;
     padding: 5px 0;
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Sliding effect on hover for lesson links */
 main section h2 a::before {
     content: "";
     position: absolute;
@@ -126,22 +119,21 @@ main section h2 a::before {
     bottom: 0;
     width: 100%;
     height: 2px;
-    background-color: #4CAF50; /* The sliding bar color */
-    transform: scaleX(0); /* Initially hidden */
+    background-color: #4CAF50;
+    transform: scaleX(0);
     transform-origin: bottom right;
-    transition: transform 0.3s ease; /* Slide-in effect */
+    transition: transform 0.3s ease;
 }
 
 main section h2 a:hover {
-    color: #4CAF50; /* Change text color on hover */
+    color: #4CAF50;
 }
 
 main section h2 a:hover::before {
-    transform: scaleX(1); /* Slide the underline in */
-    transform-origin: bottom left; /* Start from left when hovered */
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
-/* Form Styling */
 form {
     margin-bottom: 30px;
 }
@@ -177,16 +169,10 @@ footer p {
     font-size: 1em;
 }
 
-/* Embed Styling */
 iframe {
     width: 100%;
     max-width: 1000px;
     height: 500px;
     border: 0;
     border-radius: 8px;
-}
-
-body {
-    background: url('Images/rec.jpg') no-repeat center center fixed;
-    background-size: cover;
 }

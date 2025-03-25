@@ -3,52 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lessons - HTML & CSS Class</title>
+    <title>Lesson 2 - Introduction to HTML</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>HTML & CSS Class - Lessons</h1>
+        <h1>Lesson 2: Introduction to HTML</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="lessons.html">Lessons</a></li>
                 <li><a href="submit-project.html">Submit Project</a></li>
-                <li><a href="admin.html">Admin</a></li>
+                <li><a href="admin.html">Admin Panel</a></li>
             </ul>
         </nav>
     </header>
-<body>
-        <main>
-            <h2>Lesson 2: HTML Tags & Elements</h2>
-            <p>In this lesson, you'll learn about the most important HTML tags and elements used in web development.</p>
-    
-            <h3>Common HTML Tags</h3>
+
+    <main>
+        <section>
+            <h2>Lesson Overview</h2>
+            <p>In this lesson, we will learn the basics of HTML, the language used to structure and display content on the web. HTML stands for HyperText Markup Language, and it’s used to create webpages by structuring text, images, links, and other elements.</p>
+
+            <h2>What is HTML?</h2>
+            <p>HTML is a markup language, which means it’s used to describe the structure of content. It’s made up of various elements such as tags and attributes. Let’s look at an example:</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My First Webpage&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to My Webpage&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p>In this example:</p>
             <ul>
-                <li><code>&lt;h1&gt; to &lt;h6&gt;</code> - Headings</li>
-                <li><code>&lt;p&gt;</code> - Paragraph</li>
-                <li><code>&lt;a&gt;</code> - Link</li>
-                <li><code>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</code> - Lists</li>
-                <li><code>&lt;img&gt;</code> - Image</li>
+                <li><code>&lt;html&gt;</code> is the root element of the HTML document.</li>
+                <li><code>&lt;head&gt;</code> contains metadata, like the title of the page.</li>
+                <li><code>&lt;body&gt;</code> contains the visible content of the webpage.</li>
+                <li><code>&lt;h1&gt;</code> creates a top-level heading.</li>
+                <li><code>&lt;p&gt;</code> is used to define a paragraph.</li>
             </ul>
-    
-            <h3>Practice:</h3>
-            <p>Create a webpage with a heading, a paragraph, and a list. Include a link and an image. Here's a simple example:</p>
-            <pre>
-    &lt;html&gt;
-        &lt;body&gt;
-            &lt;h1&gt;My Favorite Websites&lt;/h1&gt;
-            &lt;p&gt;Here are some websites I love to visit.&lt;/p&gt;
-            &lt;ul&gt;
-                &lt;li&gt;&lt;a href="https://www.example.com"&gt;Example Website&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;img src="image.jpg" alt="A beautiful picture"&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
-            </pre>
-    
-            <p>Once you're done, move on to <a href="lesson3.html">Lesson 3</a>!</p>
-        </main>
-    </body>
-    </html>
+
+            <h2>Basic HTML Tags</h2>
+            <p>Let’s look at some of the basic HTML tags that will be used throughout the course:</p>
+            <ul>
+                <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: These are heading tags, with <code>&lt;h1&gt;</code> being the largest and most important, and <code>&lt;h6&gt;</code> being the smallest.</li>
+                <li><code>&lt;p&gt;</code>: Defines a paragraph of text.</li>
+                <li><code>&lt;a&gt;</code>: Defines a hyperlink to another webpage or resource.</li>
+                <li><code>&lt;img&gt;</code>: Embeds an image.</li>
+                <li><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code>: Used for creating unordered and ordered lists.</li>
+                <li><code>&lt;div&gt;</code>: A container element used to group content.</li>
+            </ul>
+
+            <h2>Creating Your First HTML Page</h2>
+            <p>Now, let’s create a simple HTML page together. Open your Visual Studio Code editor and create a new file named <code>index.html</code>. Add the following code:</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My First Webpage&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to My First Webpage&lt;/h1&gt;
+        &lt;p&gt;Hello, world! This is my first HTML page.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p>Save your file and open it in your web browser to see your first webpage!</p>
+
+            <h2>Next Steps</h2>
+            <p>In the next lesson, we will dive into CSS to start styling your webpage and make it look great!</p>
+        </section>
+    </main>
+</body>
+</html>

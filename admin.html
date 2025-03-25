@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript">
         var password = "Hawkins1"; // Set your password here
-        var pass = prompt("Please enter the password to access the admin page:");
+        var pass = prompt("Please enter the password to access the admin Panel:");
 
         if (pass !== password) {
             alert("Incorrect password!");
-            window.location.href = "index.html"; // Redirect if the password is wrong
-        }
+            setTimeout(function() {
+                window.location.href = "index.html"; // Redirect if the password is wrong
+            }, 3000); // 3 seconds delay
+            alert("Incorrect password! You will be redirected to the homepage in 3 seconds.");
+}
     </script>
 </head>
 <body>
@@ -23,7 +26,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="lessons.html">Lessons</a></li>
                 <li><a href="submit-project.html">Submit Project</a></li>
-                <li><a href="admin.html">Admin</a></li>
+                <li><a href="admin.html">Admin Panel</a></li>
             </ul>
         </nav>
     </header>
@@ -31,10 +34,9 @@
     <main>
         <section>
             <h2>Student Project Submissions</h2>
-            <p>Below is the embedded Google Sheet with the submissions:</p>
-            
-            <!-- Embed Google Sheets -->
-            <iframe src="https://docs.google.com/spreadsheets/d/1ZvfryKv39oHKcXCyAAYeow-vBTogKQ8NI9R7vk7HVbc/edit?gid=2006537791#gid=2006537791" width="640" height="480"></iframe>
+    </div>        <div id="iframeContainer"></div></div>
+                <iframe id="googleSheetIframe" src="https://docs.google.com/spreadsheets/d/1ZvfryKv39oHKcXCyAAYeow-vBTogKQ8NI9R7vk7HVbc/edit?gid=2006537791#gid=2006537791" width="640" height="480"></iframe>
+            </div>
         </section>
     </main>
 </body>

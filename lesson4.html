@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lessons - HTML & CSS Class</title>
+    <title>Lesson 4 - Advanced CSS Styling</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>HTML & CSS Class - Lessons</h1>
+        <h1>Lesson 4: Advanced CSS Styling</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,4 +18,80 @@
             </ul>
         </nav>
     </header>
-<body>
+
+    <main>
+        <section>
+            <h2>Lesson Overview</h2>
+            <p>In this lesson, we will explore advanced CSS styling techniques to enhance the visual appeal of your website. Topics include typography, colors, borders, shadows, and transitions.</p>
+
+            <h2>Typography</h2>
+            <p>Typography is essential for creating visually appealing text. Use the following CSS properties to style text:</p>
+            <pre><code>h1 {
+    font-family: 'Arial', sans-serif; /* Sets the font family to Arial or a fallback sans-serif font */
+    font-size: 2.5em; /* Increases the font size to make the heading prominent */
+    font-weight: bold; /* Makes the text bold */
+    color: #4CAF50; /* Sets the text color to green */
+    text-align: center; /* Centers the text horizontally */
+    text-transform: uppercase; /* Converts all text to uppercase */
+    letter-spacing: 2px; /* Adds spacing between letters for better readability */
+}</code></pre>
+            <p>These properties help you control the appearance of text, making it more readable and visually appealing.</p>
+
+            <h2>Colors</h2>
+            <p>Colors can make your website vibrant and engaging. Here's an example of using background and text colors:</p>
+            <pre><code>body {
+    background-color: #f4f4f4; /* Sets a light gray background color */
+    color: #333; /* Sets the text color to dark gray for better contrast */
+}
+
+button {
+    background-color: #4CAF50; /* Sets the button background color to green */
+    color: white; /* Sets the button text color to white */
+    border: none; /* Removes the default border */
+    padding: 10px 20px; /* Adds padding inside the button for better spacing */
+    border-radius: 5px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+}
+
+button:hover {
+    background-color: #45a049; /* Changes the button background color on hover for a visual effect */
+}</code></pre>
+            <p>These styles make your website more visually appealing and interactive.</p>
+
+            <h2>Borders and Shadows</h2>
+            <p>Add borders and shadows to elements to make them stand out:</p>
+            <pre><code>div {
+    border: 2px solid #4CAF50; /* Adds a green border with a thickness of 2px */
+    border-radius: 10px; /* Rounds the corners of the border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for a 3D effect */
+    padding: 20px; /* Adds space inside the element */
+}</code></pre>
+            <p>These properties help create a polished and professional look for your elements.</p>
+
+            <h2>Transitions</h2>
+            <p>Transitions add smooth animations to your elements. Here's an example:</p>
+            <pre><code>a {
+    color: #0077cc; /* Sets the link color to blue */
+    text-decoration: none; /* Removes the underline from the link */
+    transition: color 0.3s ease; /* Adds a smooth transition effect when the color changes */
+}
+
+a:hover {
+    color: #4CAF50; /* Changes the link color to green when hovered */
+}</code></pre>
+            <p>Transitions make your website more dynamic and improve the user experience.</p>
+
+            <h2>Challenge</h2>
+            <p>Apply the following styles to your website:</p>
+            <ol>
+                <li>Style your headings with custom fonts and colors.</li>
+                <li>Add borders and shadows to your sections.</li>
+                <li>Use transitions to create hover effects for buttons and links.</li>
+            </ol>
+
+            <h2>Next Steps</h2>
+            <p>In the next lesson, we will explore advanced CSS layout techniques like Flexbox and Grid to create complex designs.</p>
+        </section>
+    </main>
+</body>
+</html>

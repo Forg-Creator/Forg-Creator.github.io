@@ -36,6 +36,7 @@ header::before {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 12px;
 }
+
 header h1, header nav {
     position: relative;
     z-index: 1;

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 2 - Introduction to HTML</title>
+    <title>Lesson 2 - Structuring Pages with HTML</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Lesson 2: Introduction to HTML</h1>
+        <h1>Lesson 2: Structuring Pages with HTML</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -22,96 +22,37 @@
     <main>
         <section>
             <h2>Lesson Overview</h2>
-            <p>In this lesson, we will cover the basic HTML tags that form the structure of a web page. These tags include the <code>html</code>, <code>body</code>, <code>p</code>, and heading tags <code>h1</code> to <code>h6</code>.</p>
+            <p>Previously, you set up your coding environment. Now, you'll learn how to structure your web pages using HTML elements.</p>
+            <p>This lesson focuses on organizing your webpage with HTML elements like sections, lists, and links. These are the building blocks for all web pages.</p>
 
-            <h2>Basic HTML Structure</h2>
-            <p>Every HTML document starts with the <code>&lt;html&gt;</code> tag and ends with the <code>&lt;/html&gt;</code> tag. Inside the <code>&lt;html&gt;</code> tag, there are two main sections: the <code>&lt;head&gt;</code> and the <code>&lt;body&gt;</code>.</p>
-            <pre><code>&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;My First HTML Page&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;!-- Content goes here --&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+            <h2>HTML Sections</h2>
+            <p>HTML allows you to break up your webpage into sections using <code>&lt;section&gt;</code> and <code>&lt;div&gt;</code> tags. This helps organize your content.</p>
+            <pre><code>&lt;section&gt;
+    &lt;h2&gt;Introduction&lt;/h2&gt;
+    &lt;p&gt;Welcome to my webpage!&lt;/p&gt;
+&lt;/section&gt;</code></pre>
 
+            <h2>Lists</h2>
+            <p>Use <code>&lt;ul&gt;</code> for unordered lists, <code>&lt;ol&gt;</code> for ordered lists, and <code>&lt;li&gt;</code> for list items.</p>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;HTML Basics&lt;/li&gt;
+    &lt;li&gt;CSS Styling&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
 
-            <h2>Paragraph Tag</h2>
-            <p>The <code>&lt;p&gt;</code> tag is used to define a paragraph of text.</p>
-            <pre><code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre>
-
-            <h2>Heading Tags</h2>
-            <p>HTML provides six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>. The <code>&lt;h1&gt;</code> tag defines the most important heading, and the <code>&lt;h6&gt;</code> tag defines the least important heading.</p>
-            <pre><code>&lt;h1&gt;This is an H1 heading&lt;/h1&gt;
-&lt;h2&gt;This is an H2 heading&lt;/h2&gt;
-&lt;h3&gt;This is an H3 heading&lt;/h3&gt;
-&lt;h4&gt;This is an H4 heading&lt;/h4&gt;
-&lt;h5&gt;This is an H5 heading&lt;/h5&gt;
-&lt;h6&gt;This is an H6 heading&lt;/h6&gt;</code></pre>
-
-            <h2>Example</h2>
-            <p>Here is a complete example that uses the <code>html</code>, <code>body</code>, <code>p</code>, and heading tags:</p>
-            <pre><code>&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;HTML Basics&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Welcome to HTML Basics&lt;/h1&gt;
-    &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
-    &lt;h2&gt;Subheading&lt;/h2&gt;
-    &lt;p&gt;Another paragraph under a subheading.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-
-            <h2>Header Tag</h2>
-            <p>The <code>&lt;header&gt;</code> tag is used to define a header for a document or a section. It typically contains introductory content or navigational links.</p>
-            <pre><code>&lt;header&gt;
-    &lt;h1&gt;This is the header&lt;/h1&gt;
-    &lt;nav&gt;
-        &lt;ul&gt;
-            &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="hobbies.html"&gt;Hobbies&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/nav&gt;
-&lt;/header&gt;</code></pre>
-
-            <h2>Link Tag</h2>
-            <p>The <code>&lt;a&gt;</code> (anchor) tag is used to create hyperlinks. The <code>href</code> attribute specifies the URL of the page the link goes to.</p>
-            <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code></pre>
+            <h2>Links</h2>
+            <p>Links are created using the <code>&lt;a&gt;</code> tag. You can link to other pages or external websites.</p>
+            <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
 
             <h2>Challenge</h2>
-            <p>Create a new HTML page named <code>hobbies.html</code> and link it from your main page using the <code>&lt;a&gt;</code> tag.</p>
+            <p>Structure a page with the following:</p>
             <ol>
-                <li>Create a new file named <code>hobbies.html</code> in your project folder.</li>
-                <li>Add the following content to <code>hobbies.html</code>:</li>
-                <pre><code>&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;My Hobbies&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;header&gt;
-        &lt;h1&gt;My Hobbies&lt;/h1&gt;
-        &lt;nav&gt;
-            &lt;ul&gt;
-                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="hobbies.html"&gt;Hobbies&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/nav&gt;
-    &lt;/header&gt;
-    &lt;main&gt;
-        &lt;section&gt;
-            &lt;h2&gt;Hobbies&lt;/h2&gt;
-            &lt;p&gt;List your hobbies here.&lt;/p&gt;
-        &lt;/section&gt;
-    &lt;/main&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-                <li>In your main page (e.g., <code>index.html</code>), add a link to the new <code>hobbies.html</code> page:</li>
-                <pre><code>&lt;a href="hobbies.html"&gt;Hobbies&lt;/a&gt;</code></pre>
+                <li>A heading with an introduction paragraph.</li>
+                <li>A list of your favorite hobbies.</li>
+                <li>A link to a website you like.</li>
             </ol>
 
             <h2>Next Steps</h2>
-            <p>In the next lesson, we will dive deeper into HTML and learn about more tags and attributes that you can use to build web pages.</p>
+            <p>In the next lesson, you'll learn how to use more advanced HTML elements like forms, tables, and embedding images and media.</p>
         </section>
     </main>
 </body>

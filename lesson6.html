@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lessons - HTML & CSS Class</title>
+    <title>Lesson 6 - CSS Animations and Transitions</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>HTML & CSS Class - Lessons</h1>
+        <h1>Lesson 6: CSS Animations and Transitions</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,4 +18,61 @@
             </ul>
         </nav>
     </header>
-<body>
+
+    <main>
+        <section>
+            <h2>Lesson Overview</h2>
+            <p>Previously, you explored advanced CSS styling. Now, you'll learn how to use CSS animations and transitions to add interactivity and visual appeal to your website.</p>
+
+            <h2>CSS Transitions</h2>
+            <p>Transitions allow you to change property values smoothly over a specified duration. Here's an example:</p>
+            <pre><code>button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}</code></pre>
+            <p>In this example, the button's background color changes smoothly when hovered over.</p>
+
+            <h2>CSS Animations</h2>
+            <p>Animations allow you to create more complex effects by defining keyframes. Here's an example:</p>
+            <pre><code>@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+div {
+    animation: slideIn 1s ease-out;
+}</code></pre>
+            <p>This example animates a <code>div</code> element to slide in from the left.</p>
+
+            <h2>Combining Animations and Transitions</h2>
+            <p>You can combine animations and transitions to create engaging effects. For example, use transitions for hover effects and animations for page load effects.</p>
+
+            <h2>Challenge</h2>
+            <p>Create a webpage with the following features:</p>
+            <ol>
+                <li>A button with a hover effect using transitions.</li>
+                <li>A section that slides in from the left when the page loads.</li>
+                <li>Experiment with different keyframes to create unique animations.</li>
+            </ol>
+
+            <h2>Next Steps</h2>
+            <p>In the next lesson, you’ll learn how to make your website responsive so it looks great on any device.</p>
+        </section>
+    </main>
+</body>
+</html>

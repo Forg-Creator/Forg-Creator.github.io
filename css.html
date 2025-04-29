@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Cheatsheet</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #2c3e50;
+      color: white;
+      height: 100vh;
+      padding: 1rem;
+      position: fixed;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 0.5rem 0;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    .main {
+      margin-left: 240px;
+      padding: 2rem;
+      width: 100%;
+    }
+
+    header {
+      margin-bottom: 2rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid #4b6cb7;
+      padding-bottom: 0.3rem;
+    }
+
+    pre {
+      background: #eee;
+      padding: 1rem;
+      overflow-x: auto;
+    }
+
+    .preview {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      margin-top: 0.5rem;
+      background: white;
+    }
+
+    #searchInput {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>CSS Cheatsheet</h2>
+    <input type="text" id="searchInput" placeholder="Search...">
+    <a href="#selectors">Selectors</a>
+    <a href="#colors">Colors</a>
+    <a href="#boxmodel">Box Model</a>
+    <a href="#textproperties">Text Properties</a>
+    <a href="#display">Display</a>
+    <a href="#position">Position</a>
+    <a href="#flex">Flexbox</a>
+    <a href="#grid">CSS Grid</a>
+    <a href="#backgrounds">Backgrounds</a>
+    <a href="#transitions">Transitions</a>
+    <a href="#animations">Animations</a>
+    <a href="#mediaqueries">Media Queries</a>
+  </div>
+
+  <div class="main">
+    <header>
+      <h1>All CSS Properties Explained</h1>
+      <p>Click a section from the sidebar or use the search bar to find CSS properties.</p>
+    </header>
+
+    <!-- Selectors -->
+    <section id="selectors">
+      <h2>Selectors</h2>
+      <pre><code>/* Selects all elements of a type */
+div { ... }
+
+/* Selects an element with a specific class */
+.classname { ... }
+
+/* Selects an element with a specific ID */
+#idname { ... }</code></pre>
+      <div class="preview">
+        <div style="color: red;">This is a div</div>
+        <p class="classname" style="color: blue;">This is a class element</p>
+        <p id="idname" style="color: green;">This is an ID element</p>
+      </div>
+    </section>
+
+    <!-- Colors -->
+    <section id="colors">
+      <h2>Colors</h2>
+      <pre><code>color: red;
+color: #ff0000;
+color: rgb(255, 0, 0);
+color: rgba(255, 0, 0, 0.5);</code></pre>
+      <div class="preview">
+        <p style="color: red;">This is red text</p>
+        <p style="color: #ff0000;">This is red text (hex)</p>
+        <p style="color: rgb(255, 0, 0);">This is red text (rgb)</p>
+        <p style="color: rgba(255, 0, 0, 0.5);">This is semi-transparent red text (rgba)</p>
+      </div>
+    </section>
+
+    <!-- Box Model -->
+    <section id="boxmodel">
+      <h2>Box Model</h2>
+      <pre><code>padding: 20px;
+margin: 10px;
+border: 2px solid black;</code></pre>
+      <div class="preview" style="border: 2px solid black; padding: 20px; margin: 10px;">
+        This is a div with border, padding, and margin.
+      </div>
+    </section>
+
+    <!-- Text Properties -->
+    <section id="textproperties">
+      <h2>Text Properties</h2>
+      <pre><code>font-family: Arial, sans-serif;
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+text-decoration: underline;
+text-transform: uppercase;</code></pre>
+      <div class="preview" style="font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; text-align: center; text-decoration: underline; text-transform: uppercase;">
+        This is an example of text properties.
+      </div>
+    </section>
+
+    <!-- Display -->
+    <section id="display">
+      <h2>Display</h2>
+      <pre><code>display: block;
+display: inline;
+display: flex;</code></pre>
+      <div class="preview" style="display: block; background: lightgrey; padding: 10px;">
+        This is a block element.
+      </div>
+      <span style="display: inline; background: lightgrey; padding: 5px;">This is an inline element.</span>
+      <div style="display: flex; background: lightgrey; padding: 10px;">
+        This is a flexbox element.
+      </div>
+    </section>
+
+    <!-- Position -->
+    <section id="position">
+      <h2>Position</h2>
+      <pre><code>position: absolute;
+position: relative;
+position: fixed;</code></pre>
+      <div class="preview" style="position: relative; background: lightblue; padding: 10px;">
+        This is a relatively positioned element.
+        <div style="position: absolute; top: 10px; left: 10px; background: coral; padding: 5px;">Absolute child</div>
+      </div>
+    </section>
+
+    <!-- Flexbox -->
+    <section id="flex">
+      <h2>Flexbox</h2>
+      <pre><code>display: flex;
+justify-content: space-between;
+align-items: center;</code></pre>
+      <div class="preview" style="display: flex; justify-content: space-between; background: lightyellow; padding: 10px;">
+        <div style="flex: 1; background: lightgreen;">Item 1</div>
+        <div style="flex: 1; background: lightblue;">Item 2</div>
+        <div style="flex: 1; background: lightpink;">Item 3</div>
+      </div>
+    </section>
+
+    <!-- Grid -->
+    <section id="grid">
+      <h2>CSS Grid</h2>
+      <pre><code>display: grid;
+grid-template-columns: repeat(3, 1fr);</code></pre>
+      <div class="preview" style="display: grid; grid-template-columns: repeat(3, 1fr); background: lightyellow; padding: 10px;">
+        <div style="background: lightgreen; padding: 10px;">Item 1</div>
+        <div style="background: lightblue; padding: 10px;">Item 2</div>
+        <div style="background: lightpink; padding: 10px;">Item 3</div>
+      </div>
+    </section>
+
+    <!-- Backgrounds -->
+    <section id="backgrounds">
+      <h2>Backgrounds</h2>
+      <pre><code>background-color: #3498db;
+background-image: url('image.jpg');
+background-position: center center;
+background-repeat: no-repeat;</code></pre>
+      <div class="preview" style="background-color: #3498db; padding: 20px;">
+        This is a background color.
+      </div>
+    </section>
+
+    <!-- Transitions -->
+    <section id="transitions">
+      <h2>Transitions</h2>
+      <pre><code>transition: background-color 0.5s ease;
+:hover {
+  background-color: #e74c3c;
+}</code></pre>
+      <div class="preview" style="transition: background-color 0.5s ease;">
+        <div style="background-color: #2ecc71; padding: 20px;">
+          Hover over this div to see the transition.
+        </div>
+      </div>
+    </section>
+
+    <!-- Animations -->
+    <section id="animations">
+      <h2>Animations</h2>
+      <pre><code>@keyframes example {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+animation: example 2s infinite;</code></pre>
+      <div class="preview" style="animation: example 2s infinite;">
+        This element rotates due to animation.
+      </div>
+    </section>
+
+    <!-- Media Queries -->
+    <section id="mediaqueries">
+      <h2>Media Queries</h2>
+      <pre><code>@media screen and (max-width: 600px) {
+  body {
+    background-color: lightgrey;
+  }
+}</code></pre>
+    </section>
+
+  </div>
+
+  <script>
+    document.getElementById("searchInput").addEventListener("input", function(e) {
+      let searchQuery = e.target.value.toLowerCase();
+      let sections = document.querySelectorAll('section');
+      let firstMatchFound = false;
+
+      sections.forEach(section => {
+        let sectionText = section.innerText.toLowerCase();
+        if (sectionText.includes(searchQuery)) {
+          section.style.display = '';
+          if (!firstMatchFound) {
+            section.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+            firstMatchFound = true;
+          }
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

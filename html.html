@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Cheatsheet</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      display: flex;
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background-color: #2c3e50;
+      color: white;
+      height: 100vh;
+      padding: 1rem;
+      position: fixed;
+      overflow-y: auto;
+    }
+    .sidebar h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 0.5rem 0;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 240px;
+      padding: 2rem;
+      width: 100%;
+    }
+
+    header {
+      margin-bottom: 2rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid #4b6cb7;
+      padding-bottom: 0.3rem;
+    }
+
+    pre {
+      background: #eee;
+      padding: 1rem;
+      overflow-x: auto;
+    }
+
+    .preview {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      margin-top: 0.5rem;
+      background: white;
+    }
+
+    #searchInput {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>HTML Cheatsheet</h2>
+    <input type="text" id="searchInput" placeholder="Search...">
+    <a href="#doctype">DOCTYPE</a>
+    <a href="#htmlstructure">HTML Structure</a>
+    <a href="#headings">Headings</a>
+    <a href="#textformatting">Text Formatting</a>
+    <a href="#links">Links</a>
+    <a href="#images">Images</a>
+    <a href="#lists">Lists</a>
+    <a href="#forms">Forms</a>
+    <a href="#layout">Div & Span</a>
+    <a href="#brhr">Line & Horizontal Breaks</a>
+    <a href="#table">Tables</a>
+    <a href="#semantic">Semantic Tags</a>
+    <a href="#meta">Meta</a>
+    <a href="#script">Script</a>
+    <a href="#style">Style</a>
+    <a href="#iframe">Iframe</a>
+    <a href="#button">Button</a>
+  </div>
+
+  <div class="main">
+    <header>
+      <h1>All HTML Tags Explained</h1>
+      <p>Click a section from the sidebar or use the search bar to find elements.</p>
+    </header>
+
+    <!-- DOCTYPE Section -->
+    <section id="doctype">
+      <h2>&lt;!DOCTYPE html&gt;</h2>
+      <p>Declares the document type and HTML version. Always at the top.</p>
+      <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+    </section>
+
+    <!-- HTML Structure Section -->
+    <section id="htmlstructure">
+      <h2>HTML Structure</h2>
+      <p>The basic structure of any HTML document.</p>
+      <pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Content here
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+
+    <!-- Headings Section -->
+    <section id="headings">
+      <h2>Headings</h2>
+      <p>Headings range from <code>&lt;h1&gt;</code> (largest) to <code>&lt;h6&gt;</code> (smallest).</p>
+      <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Sub Heading&lt;/h2&gt;
+... to ...
+&lt;h6&gt;Smallest Heading&lt;/h6&gt;</code></pre>
+      <div class="preview">
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+        <h6>H6</h6>
+      </div>
+    </section>
+
+    <!-- Text Formatting Section -->
+    <section id="textformatting">
+      <h2>Text Formatting</h2>
+      <pre><code>&lt;p&gt;Paragraph&lt;/p&gt;
+&lt;strong&gt;Bold&lt;/strong&gt;
+&lt;em&gt;Italic&lt;/em&gt;
+&lt;u&gt;Underline&lt;/u&gt;</code></pre>
+      <div class="preview">
+        <p>This is a paragraph.</p>
+        <strong>Bold</strong>, <em>Italic</em>, <u>Underline</u>
+      </div>
+    </section>
+
+    <!-- Links Section -->
+    <section id="links">
+      <h2>Links</h2>
+      <pre><code>&lt;a href="https://example.com"&gt;Example&lt;/a&gt;</code></pre>
+      <div class="preview">
+        <a href="https://example.com" target="_blank">Example</a>
+      </div>
+    </section>
+
+    <!-- Images Section -->
+    <section id="images">
+      <h2>Images</h2>
+      <pre><code>&lt;img src="https://via.placeholder.com/150" alt="Sample"&gt;</code></pre>
+      <div class="preview">
+        <img src="https://via.placeholder.com/150" alt="Sample">
+      </div>
+    </section>
+
+    <!-- Lists Section -->
+    <section id="lists">
+      <h2>Lists</h2>
+      <pre><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;
+&lt;ol&gt;&lt;li&gt;Numbered&lt;/li&gt;&lt;/ol&gt;</code></pre>
+      <div class="preview">
+        <ul><li>Bullet</li></ul>
+        <ol><li>Numbered</li></ol>
+      </div>
+    </section>
+
+    <!-- Forms Section -->
+    <section id="forms">
+      <h2>Forms</h2>
+      <pre><code>&lt;form&gt;
+  &lt;label&gt;Name: &lt;input type="text"&gt;&lt;/label&gt;
+  &lt;input type="submit"&gt;
+&lt;/form&gt;</code></pre>
+      <div class="preview">
+        <form><label>Name: <input type="text"></label> <input type="submit"></form>
+      </div>
+    </section>
+
+    <!-- Div & Span Section -->
+    <section id="layout">
+      <h2>&lt;div&gt; and &lt;span&gt;</h2>
+      <pre><code>&lt;div&gt;Block container&lt;/div&gt;
+&lt;span&gt;Inline container&lt;/span&gt;</code></pre>
+      <div class="preview">
+        <div style="background:#ddd; padding:5px;">This is a div</div>
+        <span style="background:#eef;">This is a span</span>
+      </div>
+    </section>
+
+    <!-- Line & Horizontal Breaks Section -->
+    <section id="brhr">
+      <h2>Line & Horizontal Breaks</h2>
+      <pre><code>Line break: &lt;br&gt;
+Horizontal rule: &lt;hr&gt;</code></pre>
+      <div class="preview">
+        First line<br>Second line
+        <hr>
+        Horizontal line above
+      </div>
+    </section>
+
+    <!-- Tables Section -->
+    <section id="table">
+      <h2>Tables</h2>
+      <pre><code>&lt;table&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;John&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+      <div class="preview">
+        <table>
+          <tr><th>Name</th><th>Age</th></tr>
+          <tr><td>John</td><td>30</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- Semantic Tags Section -->
+    <section id="semantic">
+      <h2>&lt;section&gt;, &lt;article&gt;, &lt;header&gt;, &lt;footer&gt;</h2>
+      <pre><code>&lt;section&gt;Section&lt;/section&gt;
+&lt;article&gt;Article&lt;/article&gt;
+&lt;header&gt;Header&lt;/header&gt;
+&lt;footer&gt;Footer&lt;/footer&gt;</code></pre>
+      <div class="preview">
+        <section>Section</section>
+        <article>Article</article>
+        <header>Header</header>
+        <footer>Footer</footer>
+      </div>
+    </section>
+
+    <!-- Meta Section -->
+    <section id="meta">
+      <h2>&lt;meta&gt;</h2>
+      <pre><code>&lt;meta name="description" content="HTML Cheatsheet"&gt;</code></pre>
+    </section>
+
+    <!-- Script Section -->
+    <section id="script">
+      <h2>&lt;script&gt;</h2>
+      <pre><code>&lt;script&gt;
+  alert('Hello World');
+&lt;/script&gt;</code></pre>
+    </section>
+
+    <!-- Style Section -->
+    <section id="style">
+      <h2>&lt;style&gt;</h2>
+      <pre><code>&lt;style&gt;
+  body { font-family: Arial; }
+&lt;/style&gt;</code></pre>
+    </section>
+
+    <!-- Iframe Section -->
+    <section id="iframe">
+      <h2>&lt;iframe&gt;</h2>
+      <pre><code>&lt;iframe src="https://www.example.com"&gt;&lt;/iframe&gt;</code></pre>
+    </section>
+
+    <!-- Button Section -->
+    <section id="button">
+      <h2>&lt;button&gt;</h2>
+      <pre><code>&lt;button&gt;Click Me&lt;/button&gt;</code></pre>
+      <div class="preview">
+        <button>Click Me</button>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    document.getElementById("searchInput").addEventListener("input", function(e) {
+      let searchQuery = e.target.value.toLowerCase();
+      let sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        let sectionText = section.innerText.toLowerCase();
+        section.style.display = sectionText.includes(searchQuery) ? '' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>

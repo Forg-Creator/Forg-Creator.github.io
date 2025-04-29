@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 5 - Advanced CSS Layout Techniques</title>
+    <title>Lesson 5 - Advanced CSS Styling</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Lesson 5: Advanced CSS Layout Techniques</h1>
+        <h1>Lesson 5: Advanced CSS Styling</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -22,62 +22,40 @@
     <main>
         <section>
             <h2>Lesson Overview</h2>
-            <p>In this lesson, we will explore advanced CSS layout techniques, including Flexbox and Grid, to create complex and responsive designs.</p>
+            <p>In the last lesson, you learned the basics of CSS. Now, we’ll explore advanced CSS styling techniques, including typography, colors, and adding effects like borders and shadows.</p>
 
-            <h2>Flexbox</h2>
-            <p>Flexbox is a powerful layout tool for aligning and distributing space among items in a container. Here's an example:</p>
-            <pre><code>/* Container styles */
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #f4f4f4;
-}
-
-/* Item styles */
-.item {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
-}</code></pre>
-            <p>Use Flexbox to create layouts like navigation bars, card grids, and more.</p>
-
-            <h2>CSS Grid</h2>
-            <p>CSS Grid is a two-dimensional layout system for creating complex designs. Here's an example:</p>
-            <pre><code>/* Container styles */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 10px;
-    background-color: #f4f4f4;
-}
-
-/* Item styles */
-.grid-item {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
+            <h2>Typography</h2>
+            <p>Typography is essential for creating visually appealing text. Use the following CSS properties to style text:</p>
+            <pre><code>h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #4CAF50;
     text-align: center;
 }</code></pre>
-            <p>Use Grid to create layouts like photo galleries, dashboards, and more.</p>
 
-            <h2>Combining Flexbox and Grid</h2>
-            <p>You can combine Flexbox and Grid to create even more flexible designs. For example, use Grid for the overall layout and Flexbox for aligning items within a grid cell.</p>
+            <h2>Colors</h2>
+            <p>Colors can make your website vibrant and engaging. Here's an example:</p>
+            <pre><code>body {
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-            <h2>Challenge</h2>
-            <p>Create a webpage with the following features:</p>
-            <ol>
-                <li>A navigation bar using Flexbox.</li>
-                <li>A photo gallery using CSS Grid with at least 3 columns.</li>
-                <li>Responsive adjustments using media queries to make the layout adapt to smaller screens.</li>
-            </ol>
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}</code></pre>
 
             <h2>Next Steps</h2>
-            <p>In the next lesson, we will explore CSS animations and transitions to add interactivity to your designs.</p>
+            <p>In the next lesson, you’ll learn how to use CSS animations and transitions to bring your pages to life.</p>
         </section>
     </main>
 </body>
